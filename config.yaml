@@ -11,3 +11,5 @@ menu:
     - url: /status/
       name: Status
       weight: 2
+params:
+  description: "Full Windows 10 for Lumia"

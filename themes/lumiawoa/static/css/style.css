@@ -300,6 +300,8 @@ table thead tr th {
 }
 
 tr td, tr th {
+    font-size: 14px;
+    line-height: 20px;
     padding: 10px 12px;
     border-bottom: 1px solid rgba(0,0,0,.2);
 }
@@ -312,7 +314,7 @@ table tr th {
 .badge {
     display: inline-block;
     min-width: 10px;
-    padding: 3px 7px;
+    padding: 2px 6px;
     font-size: 12px;
     border-radius: 10px;
 }

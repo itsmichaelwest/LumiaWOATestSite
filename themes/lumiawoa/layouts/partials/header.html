@@ -1,13 +1,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <title>{{ block "title" . }}{{ .Title}}{{ if ne .Title .Site.Title }} — {{ .Site.Title }}{{ end }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ .Title}}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}{{ end }}</title>
     <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
     <link rel="stylesheet" href="/css/raster.grid.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/css/style.min.css" />
     {{ if .Description }}<meta name="description" content="{{ .Description }}">{{ else }}<meta name="description" content="{{ .Site.Params.Description }}">{{ end }}
-    {{ if .Params.canonical }}<link rel="canonical" href="{{ .Params.canonical }}">{{ else }}<link rel="canonical" href="{{ .Permalink }}">{{ end }}
-    {{ partial "favicons" . }}
+    <link rel="canonical" href="{{ .Permalink }}">
     {{ template "_internal/opengraph.html" . }}
 </head>

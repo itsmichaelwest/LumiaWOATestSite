@@ -1,7 +1,7 @@
 <figure {{ if isset .Params "class" }}class="{{ index .Params "class" }}"{{ end }}>
     <div class="img-wrapper" style="padding-bottom: {{ index .Params "padding" }}%;">
         <picture>
-            <source srcset="{{ index .Params "src_webp" }}" type="image/webp" />
+            <!-- <source srcset="{{ index .Params "src_webp" }}" type="image/webp" /> -->
             <img class="lazyload img-fluid" loading="lazy" src="{{ index .Params "src" }}" alt="{{ index .Params "alt" }}" />
         </picture>
         <noscript><img src="{{ index .Params "src" }}" class="img-fluid" /></noscript>

@@ -107,6 +107,12 @@ main {
     text-align: right;
 }
 
+@media screen and (min-width: 600px) {
+    .cfh {
+        height: 32rem;
+    }
+}
+
 .sr-only {
     position: absolute;
     width: 1px;

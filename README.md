@@ -1,6 +1,6 @@
 # LumiaWOATestSite
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d040754a-2fd8-44e1-bbc7-efe96ebe80b6/deploy-status)](https://app.netlify.com/sites/lumiawoa-test-hugo/deploys)
+This repository contains the base files required to compile the LumiaWOA webpages.
 
 Build instructions
 1. Install the [Hugo](https://gohugo.io/) static site generator.

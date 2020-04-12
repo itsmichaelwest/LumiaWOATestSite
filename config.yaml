@@ -1,4 +1,4 @@
-baseURL: "http://example.org/"
+baseURL: "https://lumiawoa-test-hugo.netlify.com"
 languageCode: "en-us"
 title: "Lumia WOA Project"
 theme: "lumiawoa"

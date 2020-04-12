@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ $section := .Section | lower }}
+{{ $paginator := .Paginate (where .Pages "Type" $section) }}
+<div class="wrapper-ds">
+    {{ range $paginator.Pages }}
+    {{ .Render "summary" }}
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}

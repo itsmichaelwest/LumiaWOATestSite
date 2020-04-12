@@ -1,0 +1,11 @@
+{{ define "main"}}
+<main>
+    <h1>Page not found</h1>
+    <h5>We can't seem to find what you were looking for.</h5>
+    <p class="caption secondary" id="url"></p>
+    <script>
+        document.getElementById("url").innerHTML = "<em>" + window.location.pathname + "</em>";
+    </script>
+    <p class="caption">HTTP 404</p>
+</main>
+{{ end }}

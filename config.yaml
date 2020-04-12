@@ -1,0 +1,13 @@
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "Lumia WOA Project"
+theme: "lumiawoa"
+copyright: "© 2020 The Lumia WOA Authors"
+menu:
+  main:
+    - url: /
+      name: Home
+      weight: 1
+    - url: /status/
+      name: Status
+      weight: 2

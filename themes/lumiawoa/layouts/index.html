@@ -1,0 +1,160 @@
+{{ define "main" }}
+<main aria-role="main">
+    <div id="hero" class="sect">
+        <div>
+            <h1>Lumia WOA</h1>
+            <h4 class="secondary">Full Windows 10 for Lumia</h4>        
+        </div>
+    </div>
+    <div class="hero-sect warning main-breakout">
+        <div class="wrapper">
+            <h3><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i>Caution</h3>
+            <h6>Experimental firmware ahead</h6>
+            <p>The firmware provided is for testing purposes only. We aren't be responsible for any data loss caused by the firmware images. Make backups of your data prior to installing.</p>
+            <p><strong>This software has not been approved for use with emergency services. By installing this software, you agree to not use it as your primary phone device due to possible disruption in emergency service access.</strong></p>
+        </div>
+    </div>
+    <div class="hero-sect grey main-breakout">
+        <r-grid columns=2>
+            <r-cell span-s=row>
+                <h1 style="margin: 0"><i class="ms-Icon ms-Icon--WindowsLogo" aria-hidden="true"></i></h1>
+                <h2>The Windows You Know and Love</h2>
+                <p>This project brings the Windows 10 desktop operating system to your Lumia 950 and Lumia 950 XL.</p>
+                <p>It's the same edition of Windows 10 you're used to on your traditional laptop or desktop computer, but it's the version for ARM64 (armv8a) processors.</p>
+                <p>It can run ARM64, ARM and x86 applications (the later via emulation) just fine.<sup>1</sup></p>
+            </r-cell>
+            <r-cell span-s=row>
+                <figure>
+                    <div class="img-wrapper" style="padding-bottom: 52.81%;">
+                        <picture>
+                            <!-- <source srcset="/img/desktop.webp" type="image/webp" /> -->
+                            <img class="lazyload img-fluid" loading="lazy" src="/img/Desktop.png" alt="A Lumia 950" />
+                        </picture>
+                        <noscript><img src="/img/Desktop.png" class="img-fluid" /></noscript>
+                    </div>
+                </figure>
+            </r-cell>
+        </r-grid>
+    </div>
+    <div class="hero-sect blue main-breakout">
+        <figure>
+            <div class="img-wrapper" style="padding-bottom: 32rem;">
+                <picture>
+                    <!-- <source srcset="/img/desktop.webp" type="image/webp" /> -->
+                    <img class="lazyload img-fluid phone-portrait" loading="lazy" src="/img/phone_continuum.png" alt="A Lumia 950" />
+                </picture>
+                <noscript><img src="/img/phone_continuum.png" class="img-fluid" /></noscript>
+            </div>
+        </figure>
+        <div class="align-center">
+            <h1 style="margin-top: 2rem;"><i class="ms-Icon ms-Icon--TVMonitor" aria-hidden="true"></i></h1>
+            <h2 style="margin: 2rem 0;">With Continuum<sup style="font-size: 12px; font-weight: 400;">2</sup></h2>
+            <figure>
+                <div class="img-wrapper" style="padding-bottom: 62.5%;">
+                    <picture>
+                        <!-- <source srcset="/img/desktop.webp" type="image/webp" /> -->
+                        <img class="lazyload img-fluid" loading="lazy" src="/img/desktop_continuum.png" alt="A Lumia 950" />
+                    </picture>
+                    <noscript><img src="/img/desktop_continuum.png" class="img-fluid" /></noscript>
+                </div>
+            </figure>
+        </div>
+    </div>
+    <r-grid columns=2 class="wrapper">
+        <r-cell span=1 span-s=row class="vertical-center">
+            <h1 style="margin: 0"><i class="ms-Icon ms-Icon--CellPhone" aria-hidden="true"></i></h1>
+            <h2>A Mobile Twist</h2>
+            <p>MobileShell is a fully-featured adaptive shell aiming to mimic the appearance of Windows 10 Mobile. MobileShell brings back the navigation bar, status bar, puts your notification toasts at the top, status icons at a glance, and activates only when your phone is in tablet mode.</p>
+        </r-cell>
+        <r-cell span=1 span-s=row>
+            <figure>
+                <div class="img-wrapper" style="padding-bottom: 32rem;">
+                    <picture>
+                        <!-- <source srcset="/img/desktop.webp" type="image/webp" /> -->
+                        <img class="lazyload img-fluid phone-portrait" loading="lazy" src="/img/MobilePortrait.png" alt="A Lumia 950" />
+                    </picture>
+                    <noscript><img src="/img/MobilePortrait.png" class="img-fluid" /></noscript>
+                </div>
+            </figure>
+        </r-cell>
+        <r-cell span=1 span-s=row class="vertical-center" style="height: 32rem;">
+            <figure>
+                <div class="img-wrapper" style="padding-bottom: 51.6%;">
+                    <picture>
+                        <!-- <source srcset="/img/desktop.webp" type="image/webp" /> -->
+                        <img class="lazyload img-fluid" loading="lazy" src="/img/MobileLandscape.png" alt="A Lumia 950" />
+                    </picture>
+                    <noscript><img src="/img/MobileLandscape.png" class="img-fluid" /></noscript>
+                </div>
+            </figure>
+        </r-cell>
+        <r-cell span=1 span-s=row class="vertical-center" style="height: 32rem;">
+            <p>MobileShell also supports landscape mode, adjusting perfectly to the phone's current state. Mobile Shell is made by @ADeltaX and is not included by default, but you can download it from the Microsoft Store.</p>
+            <div class="button-group">
+                <a href='//www.microsoft.com/store/apps/9pjjrrfmg383?cid=storebadge&ocid=badge' style="padding-top: 4px;"><img src='/vector/ms_get.svg' alt='English badge' style="width: auto; height: 32px;"/></a>
+                <a class="button" href='https://github.com/ADeltaX/MobileShell'>View on GitHub</a>
+            </div>
+        </r-cell>
+    </r-grid>
+    <div class="hero-sect grey main-breakout">
+        <r-grid columns=2>
+            <r-cell span-s=row class="vertical-center">
+                <h1 style="margin: 0"><i class="ms-Icon ms-Icon--Phone" aria-hidden="true"></i></h1>
+                <h2>Say Hello...<sup style="font-size: 12px; font-weight: 400;">2</sup></h2>
+                <div>
+                    <p>This project backports the cellular stack from Windows 10 Mobile to Windows 10 desktop. On supported versions of Windows, you can make calls, texts, and browse the internet using a cellular connection.</p>
+                    <p>WOA Dialer is a new app that allows you to make and manage calls on your device. WOA Dialer is bundled with the project by default, along with the classic Microsoft Phone app.</p>
+                </div>
+                <div>
+                    <a class="button" href='https://github.com/WOA-Project/woadialer'>View WOA Dialer on GitHub</a>
+                </div>
+            </r-cell>
+            <r-cell span-s=row>
+                <figure>
+                    <div class="img-wrapper" style="padding-bottom: 32rem;">
+                        <picture>
+                            <!-- <source srcset="/img/desktop.webp" type="image/webp" /> -->
+                            <img class="lazyload img-fluid phone-portrait" loading="lazy" src="/img/Dialer.png" alt="A Lumia 950" />
+                        </picture>
+                        <noscript><img src="/img/Dialer.png" class="img-fluid" /></noscript>
+                    </div>
+                </figure>
+            </r-cell>
+        </r-grid>
+    </div>
+    <div class="hero-sect blue main-breakout">
+        <r-grid columns=2>
+            <r-cell span-s=row>
+                <figure>
+                    <div class="img-wrapper" style="padding-bottom: 32rem;">
+                        <picture>
+                            <!-- <source srcset="/img/desktop.webp" type="image/webp" /> -->
+                            <img class="lazyload img-fluid phone-portrait" loading="lazy" src="/img/Chat.png" alt="A Lumia 950" />
+                        </picture>
+                        <noscript><img src="/img/Chat.png" class="img-fluid" /></noscript>
+                    </div>
+                </figure>
+            </r-cell>
+            <r-cell span-s=row class="vertical-center">
+                <h1 style="margin: 0"><i class="ms-Icon ms-Icon--Message" aria-hidden="true"></i></h1>
+                <h2>...Or Send a Message<sup style="font-size: 12px; font-weight: 400;">2</sup></h2>
+                <p>With the Chat application, you can recieve and send SMS messages. MMS messages remain unsupported as of now.</p>
+                <div>
+                    <a class="button" href='https://github.com/WOA-Project/Chat'>View Chat on GitHub</a>
+                </div>
+            </r-cell>
+        </r-grid>
+    </div>
+    <r-grid columns=2 class="wrapper" style="grid-column: full;">
+        <r-cell span=1-2 span-s=row>
+            <h2>And Much More!</h2>
+        </r-cell>
+        {{ partial "much-more" }}
+    </r-grid>
+    <div class="wrapper" style="grid-column: full;">
+        <p class="caption secondary"><sup>1</sup> Applications compiled for the AMD64/x86-64 architecture are not supported.</p>
+        <p class="caption secondary"><sup>2</sup> Continuum currently only works wirelessly over Miracast.</p>
+        <p class="caption secondary"><sup>3</sup> Cellular support is still unfinished and might be broken in some areas. Cellular calls and texts are supported up to Windows 10 November 2019 Update (version 19H2, build 18363). Versions higher than this will <strong>only</strong> support cellular data. Dual SIM devices may have issues fetching the default Carrier APN settings, a provisioning package for APN may be required. The advanced settings page for Cellular in the Windows Settings app may crash. Your experience will vary between carries and devices. This software stack has not been approved for use with emergency services. As a consequence it should not be used as your primary way of communication. VoLTE (IMS) stack while present is not functional.</p>
+    </div>
+</main>
+{{ end }}

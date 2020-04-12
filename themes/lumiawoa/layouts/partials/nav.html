@@ -1,0 +1,13 @@
+<nav id="navbar">
+    <div class="wrapper">
+        <a href="{{ "/" | absURL }}" aria-label="Homepage">
+            {{ .Site.Title }}
+        </a>
+        <div class="nav-links">
+            {{ $url := .URL }}
+            {{ range .Site.Menus.main }}
+                <a {{ if eq $url (.URL ) }}class="active"{{end}} href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}
+        </div>        
+    </div>
+</nav>

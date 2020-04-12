@@ -1,0 +1,13 @@
+<r-grid columns=2 style="padding: 0">
+    <r-cell>
+        <h3 style="margin: 0;">{{ index .Params "device" }}<span class="codename">{{ index .Params "codename" }}</span></h3>
+    </r-cell>
+    <r-cell class="vertical-center">
+        <h5 class="text-right" style="margin: 0;">{{ index .Params "val" }}%</h5>
+    </r-cell>
+</r-grid>
+<div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="{{ index .Params "val" }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ index .Params "val" }}%; top: -13px">
+        <span class="sr-only">{{ index .Params "val" }}%</span>
+    </div>
+</div>

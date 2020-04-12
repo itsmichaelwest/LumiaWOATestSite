@@ -1,0 +1,44 @@
+<figure {{ if isset .Params "class" }}class="{{ index .Params "class" }}"{{ end }}>
+    <div class="img-wrapper" style="padding-bottom: {{ index .Params "padding" }}%;">
+        <picture>
+            <source srcset="{{ index .Params "src_webp" }}" type="image/webp" />
+            <img class="lazyload img-fluid" loading="lazy" src="{{ index .Params "src" }}" alt="{{ index .Params "alt" }}" />
+        </picture>
+        <noscript><img src="{{ index .Params "src" }}" class="img-fluid" /></noscript>
+    </div>
+    {{ if .Get "caption" }}
+    <figcaption>
+        {{ if isset .Params "title" }}
+        <h4>{{ index .Params "title" }}</h4>
+        {{ end }}
+        {{ if or (isset .Params "caption") (isset .Params "attr")}}
+        <p>{{ index .Params "caption" }}
+            {{ if isset .Params "attrlink"}}
+            <a href="{{ index .Params "attrlink"}}"> {{ end }}
+            {{ index .Params "attr" }}
+            {{ if isset .Params "attrlink"}}</a>
+            {{ end }}
+        </p> 
+        {{ end }} 
+    </figcaption>
+    {{ end }}
+</figure>
+
+<!-- image
+<figure {{ if isset .Params "class" }}class="{{ index .Params "class" }}"{{ end }}>
+    {{ if isset .Params "link"}}<a href="{{ index .Params "link"}}">{{ end }}
+        <img src="{{ index .Params "src" }}" {{ if or (isset .Params "alt") (isset .Params "caption") }}alt="{{ if isset .Params "alt"}}{{ index .Params "alt"}}{{else}}{{ index .Params "caption" }}{{ end }}"{{ end }} />
+    {{ if isset .Params "link"}}</a>{{ end }}
+    {{ if or (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr")}}
+    <figcaption>{{ if isset .Params "title" }}
+        <h4>{{ index .Params "title" }}</h4>{{ end }}
+        {{ if or (isset .Params "caption") (isset .Params "attr")}}<p>
+        {{ index .Params "caption" }}
+        {{ if isset .Params "attrlink"}}<a href="{{ index .Params "attrlink"}}"> {{ end }}
+            {{ index .Params "attr" }}
+        {{ if isset .Params "attrlink"}}</a> {{ end }}
+        </p> {{ end }} 
+    </figcaption>
+    {{ end }}
+</figure>
+ -->

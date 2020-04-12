@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'SegoeMDL2';
+    src: url('/font/SegMDL2.ttf');
+}
+
 /* Core site */
 html {
     font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
@@ -24,6 +29,10 @@ i.ms-Icon {
     -ms-transform: translateY(10%);
     transform: translateY(10%);
     margin-right: 12px;
+}
+
+.ms-Icon.smdl2 {
+    font-family: "SegoeMDL2";
 }
 
 .wrapper {
